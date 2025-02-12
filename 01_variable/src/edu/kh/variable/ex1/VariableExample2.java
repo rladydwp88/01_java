@@ -26,6 +26,8 @@ public class VariableExample2 {
 		booleanData = true; // booleanData 변수에 true 논리값 집어넣기(대입)
 		
 		System.out.println("booleanData : " + booleanData);
+		
+		
 
 		byte byteNumber = 127;
 		// 메모리에 정수값을 저장할 공간을 1byte 할당하고
