@@ -30,7 +30,7 @@ public class OperatorPractice {
 		
 		System.out.println();
 		
-		System.out.print("남는 사탕 개수 : " + (100 - input1 * (input2 / input1)) );
+		System.out.print("남는 사탕 개수 : " + (input2 - input1 * (input2 / input1)) );
 		
 	}
 	
@@ -91,18 +91,18 @@ public class OperatorPractice {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("국어 : ");
-		int iNum1 = sc.nextInt();
+		int input1 = sc.nextInt();
 				
 		System.out.print("영어 : ");
-		int iNum2 = sc.nextInt();
+		int input2 = sc.nextInt();
 		
 		System.out.print("수학 : ");
-		int iNum3 = sc.nextInt();
+		int input3 = sc.nextInt();
 		
-		System.out.println("합계 : %d + %d + %d", iNum1 + iNum2 + iNum3);
+		System.out.print("합계 : ");
+		System.out.println( input1 + input2 + input3 );
 		
-		System.out.println("평균 : (%d + %d + %d) / 3", iNum1 + iNum2 + iNum3);
-		double dNum = sc.nextDouble();
-		
+		System.out.print("평균 : ");
+		System.out.println( (input1 + input2 + input3) / 3.0);
 	}
 }
