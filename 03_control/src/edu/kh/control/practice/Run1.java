@@ -8,7 +8,8 @@ public class Run1 {
 		
 		// pt.practice1 ();
 		// pt.practice2 ();
-		pt.practice3 ();
+		// pt.practice3 ();
+		pt.practice4 ();
 		
 	}
 

@@ -80,6 +80,81 @@ public class ConditionPractice {
 		}
 		
 	}
+	
+	public void practice4() {
+		
+		System.out.print("키(m)를 입력해 주세요 : ");
+		double height = sc.nextDouble();
+		
+		System.out.print("몸무게(kg)를 입력해 주세요 : ");
+		double weight = sc.nextDouble();
+		
+		double bmi = weight / ( height * height );
+		System.out.println("BMI 지수 : " + bmi);
+		
+		String result;
+		
+		if ( bmi < 18.5 ) {
+			result = "저체중";
+			
+		} else if (bmi < 23) {
+			result = "정상체중";
+			
+		} else if ( bmi < 25 ) {
+			result = "과체중";
+			
+		} else if (bmi < 30) {
+			result = "비만";
+			
+		} else {
+			result = "고도 비만";
+		
+		}
+		
+		System.out.println(result);
+		
+	}
+	
+	public void practice5() {
+		
+		System.out.print("중간 고사 점수 : ");
+		double midNum = sc.nextDouble();
+		
+		System.out.print("기말 고사 점수 : ");
+		double finalNum = sc.nextDouble();
+		
+		System.out.print("과제 점수 : ");
+		double reportNum = sc.nextDouble();
+		
+		System.out.print("출석 횟수 : ");
+		double attendNum = sc.nextInt();
+		
+		midNum *= 0.2;
+		finalNum *= 0.3;
+		reportNum *= 0.3;
+		
+		System.out.print("========== 결과 ==========");
+		
+		if (attendNum < 20 * 0.7) {
+			System.out.printf("출석 횟수 부족 (%d/20)", attendNum);
+		}
+		
+		
+		
+		/*
+		System.out.printf("중간 고사 점수(20) : %.1f", midNum * 0.2);
+		System.out.printf("기말 고사 점수(30) : %.1f", finalNum * 0.3);
+		System.out.printf("과제 점수(20) : %.1f", reportNum * 0.3);
+		System.out.printf("출석 점수(20) : %.1f", attendNum * 0.2);
+		System.out.println("총점 : ");
+		
+		String result;
+		
+		*/
+		
+		
+		
+	}
 
 
 
