@@ -135,6 +135,53 @@ public class LoopPractice {
 	
 	public void practice6() {
 		
+		System.out.print("숫자 : ");
+		int num = sc.nextInt();
+		
+		if (1 > num || num > 10) {
+			System.out.println("2~9 사이 숫자만 입력해주세요.");
+			
+		} else {
+			for (int dan = num; dan <= 9; dan++) {	
+				System.out.println("====" + dan + "단 ====");
+				for (int i = 1; i <= 9; i++)
+					System.out.printf("%d x %d = %d\n", dan, i, dan * i);
+			}
+				
+		}
+		
+	}
+	
+	public void practice7() {
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for (int row = 1; row <= input; row++) {
+			for (int col = 1; col <= row; col++) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+		
+	}
+	
+	public void practice8() {
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for (int row = input; 1 <= row; row--) {
+			for (int col = 1; col <= row; col++) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+		
 	}
 	
 }
+
+			
