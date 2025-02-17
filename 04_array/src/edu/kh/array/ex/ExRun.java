@@ -4,9 +4,9 @@ public class ExRun {
 	
 	public static void main(String[] args) {
 		
-		Ex e = new Ex();
+		Ex ex = new Ex();
 		
-		e.ex1();
+		ex.ex1();
 		
 	}
 
