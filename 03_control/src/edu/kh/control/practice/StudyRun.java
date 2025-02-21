@@ -13,7 +13,8 @@ public class StudyRun {
 		// stu.conditionPractice1();
 		// stu.conditionPractice2();
 		// stu.conditionPractice3();
-		stu.conditionPractice4();
+		// stu.conditionPractice4();
+		stu.conditionPractice5();
 		
 	}
 		
