@@ -20,6 +20,6 @@ public class Poetry extends Book {
 	
 	@Override
 	public void displayInfo() {
-		System.out.println("[시집]" + super.toString() + numberOfPoems);
+		System.out.printf("[시집] 제목 : %s / 저자 : %s / 장르 : %s", super.getTitle(), super.getAuthor(), numberOfPoems);
 	}
 }

@@ -17,8 +17,9 @@ public class Run {
 		bookArr[1] = new Textbook("자바 프로그래밍", "James Gosling", "컴퓨터 과학");
 		bookArr[2] = new Poetry("우리들의 사랑시", "김소월", 30);
 		
-		// 모든 도서 정보 출력
-		for(int i = 0; i < bookArr.length; i++) {
+		// 모든 도서 정보 출력	
+		for(Book books : bookArr) {
+			books.displayInfo();
 			System.out.println();
 		}
 	}

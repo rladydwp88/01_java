@@ -29,9 +29,4 @@ public abstract class Book {
 	}
 	
 	public abstract void displayInfo();
-	
-	@Override
-	public String toString() {
-		return " 제목 : " + title + " / 저자 : " + author + " / ";
-	}
 }
