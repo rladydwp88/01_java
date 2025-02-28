@@ -69,11 +69,12 @@ public class Hero {
 	}
 
 	public void attack() {
-		
+		System.out.println();
 	}
 	
 	public void dash() {
-		
+		level += exp;
+		System.out.println("%s님이 공격 하였습니다.");
 	}
 
 	@Override
