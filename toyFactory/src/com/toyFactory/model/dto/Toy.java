@@ -1,25 +1,23 @@
 package com.toyFactory.model.dto;
 
-import java.util.Objects;
-
 public class Toy {
 	private String toyName;
-	private int age;
+	private int userAge;
 	private int price;
 	private String color;
-	private String date;
-	private String material;
+	private String made;
+	private String addmaterial;
 	
 	public Toy() {}
 
-	public Toy(String toyName, int age, int price, String color, String date, String material) {
+	public Toy(String toyName, int userAge, int price, String color, String made, String addmaterial) {
 		super();
 		this.toyName = toyName;
-		this.age = age;
+		this.userAge = userAge;
 		this.price = price;
 		this.color = color;
-		this.date = date;
-		this.material = material;
+		this.made = made;
+		this.addmaterial = addmaterial;
 	}
 
 	public String getToyName() {
@@ -30,12 +28,12 @@ public class Toy {
 		this.toyName = toyName;
 	}
 
-	public int getAge() {
-		return age;
+	public int getUserAge() {
+		return userAge;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
 	}
 
 	public int getPrice() {
@@ -54,45 +52,24 @@ public class Toy {
 		this.color = color;
 	}
 
-	public String getDate() {
-		return date;
+	public String getMade() {
+		return made;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setMade(String made) {
+		this.made = made;
 	}
 
-	public String getMaterial() {
-		return material;
+	public String getAddmaterial() {
+		return addmaterial;
 	}
 
-	public void setMaterial(String material) {
-		this.material = material;
+	public void setAddmaterial(String addmaterial) {
+		this.addmaterial = addmaterial;
 	}
 	
 	@Override
 	public String toString() {
-		return "Toy [toyName=" + toyName + ", age=" + age + ", price=" + price + ", color=" + color + ", date=" + date
-				+ ", material=" + material + "]";
+		return super.toString();
 	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(age, color, date, material, price, toyName);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Toy other = (Toy) obj;
-		return Objects.equals(age, other.age) && Objects.equals(color, other.color) && Objects.equals(date, other.date)
-				&& Objects.equals(material, other.material) && price == other.price
-				&& Objects.equals(toyName, other.toyName);
-	}
-
 }
