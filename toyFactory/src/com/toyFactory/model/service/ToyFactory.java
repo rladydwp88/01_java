@@ -1,11 +1,19 @@
 package com.toyFactory.model.service;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
+
+import com.toyFactory.model.dto.Toy;
 
 public class ToyFactory {
 	Scanner sc = new Scanner(System.in);
 	
 	public void diplayMenu() {
+		
+		Set<Toy> materials = new HashSet<>();
+		
+		
 		int menuNum = 0;
 		
 		do {
